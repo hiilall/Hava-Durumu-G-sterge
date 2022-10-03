@@ -39,7 +39,9 @@ class Ui_MainWindow(object):
         self.frameSicaklik.setMaximumSize(QtCore.QSize(300, 300))
         self.frameSicaklik.setStyleSheet("QFrame{\n"
 "    border-radius:150px;\n"
-"    background-color: qconicalgradient(cx:0.51, cy:0.511364, angle:270.2, stop:0 rgba(255, 255, 255, 255), stop:0.04 rgba(255, 255, 0, 255), stop:0.08 rgba(255, 151, 0, 255), stop:1 rgba(255, 0, 0, 255));\n"
+"    background-color: qconicalgradient(cx:0.51, cy:0.511364, angle:270.2, stop:0.97 rgba(255, 255, 255, 255), stop:0.98 rgba(255, 255, 0, 255), stop:0.99 rgba(255, 151, 0, 255), stop:1 rgba(255, 0, 0, 255));\n"
+"\n"
+"\n"
 "}\n"
 "")
         self.frameSicaklik.setFrameShape(QtWidgets.QFrame.StyledPanel)
@@ -51,7 +53,7 @@ class Ui_MainWindow(object):
         self.frameNem.setSizeIncrement(QtCore.QSize(260, 260))
         self.frameNem.setStyleSheet("QFrame{\n"
 "    border-radius:130px;\n"
-"    background-color: qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:0.999818, stop:0.15 rgba(255, 255, 255, 255), stop:0.4 rgba(113, 144, 255, 255), stop:1 rgba(69, 110, 255, 255));\n"
+"    background-color: qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:0.999818, stop:0.95 rgba(255, 255, 255, 255), stop:0.98 rgba(113, 144, 255, 255), stop:1 rgba(69, 110, 255, 255));\n"
 "    \n"
 "}\n"
 "")
@@ -68,6 +70,16 @@ class Ui_MainWindow(object):
         font.setPointSize(10)
         self.labelDeger.setFont(font)
         self.labelDeger.setObjectName("labelDeger")
+        self.comboBox = QtWidgets.QComboBox(self.frame_5)
+        self.comboBox.setGeometry(QtCore.QRect(12, 20, 141, 31))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        self.comboBox.setFont(font)
+        self.comboBox.setObjectName("comboBox")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
         self.gridLayout_10.addWidget(self.frame_5, 0, 1, 1, 1)
         self.gridLayout_2.addLayout(self.gridLayout_10, 3, 0, 1, 1)
         spacerItem = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
@@ -108,6 +120,12 @@ class Ui_MainWindow(object):
         self.label_2.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.label_2.setObjectName("label_2")
         self.gridLayout_4.addWidget(self.label_2, 1, 0, 1, 1)
+        self.horizontalSliderSicaklik = QtWidgets.QSlider(self.centralwidget)
+        self.horizontalSliderSicaklik.setMinimumSize(QtCore.QSize(300, 0))
+        self.horizontalSliderSicaklik.setMaximumSize(QtCore.QSize(300, 16777215))
+        self.horizontalSliderSicaklik.setOrientation(QtCore.Qt.Horizontal)
+        self.horizontalSliderSicaklik.setObjectName("horizontalSliderSicaklik")
+        self.gridLayout_4.addWidget(self.horizontalSliderSicaklik, 0, 1, 1, 1)
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setMinimumSize(QtCore.QSize(60, 0))
         self.label.setMaximumSize(QtCore.QSize(60, 16777215))
@@ -124,12 +142,6 @@ class Ui_MainWindow(object):
         self.horizontalSliderNem.setOrientation(QtCore.Qt.Horizontal)
         self.horizontalSliderNem.setObjectName("horizontalSliderNem")
         self.gridLayout_4.addWidget(self.horizontalSliderNem, 1, 1, 1, 1)
-        self.horizontalSliderSicaklik = QtWidgets.QSlider(self.centralwidget)
-        self.horizontalSliderSicaklik.setMinimumSize(QtCore.QSize(300, 0))
-        self.horizontalSliderSicaklik.setMaximumSize(QtCore.QSize(300, 16777215))
-        self.horizontalSliderSicaklik.setOrientation(QtCore.Qt.Horizontal)
-        self.horizontalSliderSicaklik.setObjectName("horizontalSliderSicaklik")
-        self.gridLayout_4.addWidget(self.horizontalSliderSicaklik, 0, 1, 1, 1)
         self.gridLayout_3.addLayout(self.gridLayout_4, 0, 1, 1, 1)
         self.gridLayout_2.addLayout(self.gridLayout_3, 0, 0, 1, 1)
         self.gridLayout_5.addLayout(self.gridLayout_2, 0, 0, 1, 1)
@@ -143,6 +155,10 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.labelDeger.setText(_translate("MainWindow", "SICAKLIK:\n"
 "NEM:"))
+        self.comboBox.setItemText(0, _translate("MainWindow", "istanbul"))
+        self.comboBox.setItemText(1, _translate("MainWindow", "ankara"))
+        self.comboBox.setItemText(2, _translate("MainWindow", "izmir"))
+        self.comboBox.setItemText(3, _translate("MainWindow", "sakarya"))
         self.radioButtonManuel.setText(_translate("MainWindow", "Manuel "))
         self.radioButtonOtomatik.setText(_translate("MainWindow", "Otomatik"))
         self.label_2.setText(_translate("MainWindow", "Nem"))

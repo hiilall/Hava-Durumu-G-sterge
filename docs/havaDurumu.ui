@@ -70,7 +70,9 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:1 rgb
           <property name="styleSheet">
            <string notr="true">QFrame{
 	border-radius:150px;
-	background-color: qconicalgradient(cx:0.51, cy:0.511364, angle:270.2, stop:0 rgba(255, 255, 255, 255), stop:0.04 rgba(255, 255, 0, 255), stop:0.08 rgba(255, 151, 0, 255), stop:1 rgba(255, 0, 0, 255));
+	background-color: qconicalgradient(cx:0.51, cy:0.511364, angle:270.2, stop:0.97 rgba(255, 255, 255, 255), stop:0.98 rgba(255, 255, 0, 255), stop:0.99 rgba(255, 151, 0, 255), stop:1 rgba(255, 0, 0, 255));
+
+
 }
 </string>
           </property>
@@ -104,7 +106,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:1 rgb
            <property name="styleSheet">
             <string notr="true">QFrame{
 	border-radius:130px;
-	background-color: qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:0.999818, stop:0.15 rgba(255, 255, 255, 255), stop:0.4 rgba(113, 144, 255, 255), stop:1 rgba(69, 110, 255, 255));
+	background-color: qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:0.999818, stop:0.95 rgba(255, 255, 255, 255), stop:0.98 rgba(113, 144, 255, 255), stop:1 rgba(69, 110, 255, 255));
 	
 }
 </string>
@@ -141,6 +143,41 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:1 rgb
             <string>SICAKLIK:
 NEM:</string>
            </property>
+          </widget>
+          <widget class="QComboBox" name="comboBox">
+           <property name="geometry">
+            <rect>
+             <x>12</x>
+             <y>20</y>
+             <width>141</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <item>
+            <property name="text">
+             <string>istanbul</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>ankara</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>izmir</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>sakarya</string>
+            </property>
+           </item>
           </widget>
          </widget>
         </item>
@@ -250,6 +287,25 @@ border-radius: 15px;</string>
             </property>
            </widget>
           </item>
+          <item row="0" column="1">
+           <widget class="QSlider" name="horizontalSliderSicaklik">
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>300</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
           <item row="0" column="0">
            <widget class="QLabel" name="label">
             <property name="minimumSize">
@@ -285,25 +341,6 @@ border-radius: 15px;</string>
           </item>
           <item row="1" column="1">
            <widget class="QSlider" name="horizontalSliderNem">
-            <property name="minimumSize">
-             <size>
-              <width>300</width>
-              <height>0</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>300</width>
-              <height>16777215</height>
-             </size>
-            </property>
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="1">
-           <widget class="QSlider" name="horizontalSliderSicaklik">
             <property name="minimumSize">
              <size>
               <width>300</width>
