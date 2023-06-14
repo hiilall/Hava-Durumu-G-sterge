@@ -1,4 +1,4 @@
-# Hava_Durumu_Arayuz 💻🔗
+# Hava_Durumu_Arayuz 💻 🌐
 Bu uygulamada beautifulsoup kullanılarak internetten hava durumu verisi çekilmiştir. QtDesigner programı üzerinden arayüz tasarımı yapılmış ve progressbar tasarımı ile hava durumu verisi görselleştirilmiştir.
 
 ## Otomatik Veri Çekme
